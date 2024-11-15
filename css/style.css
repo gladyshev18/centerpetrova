@@ -7,6 +7,9 @@
 :root {
     --swiper-pagination-bottom: 0px;
     --swiper-pagination-color: #74169A;
+    --swiper-navigation-sides-offset: 0;
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-color: #333;
 }
 
 body {
@@ -265,7 +268,7 @@ body {
 }
 
 .exercises-wrapper {
-    max-width: 800px;
+    max-width: 880px;
     width: 100%;
     margin: 0 auto;
 }
@@ -350,6 +353,11 @@ body {
 .exercises-slider {
     padding-bottom: 45px;
     margin-bottom: 100px;
+}
+
+.exercises-slider-wrapper {
+    position: relative;
+    padding: 0 20px;
 }
 
 .next-lesson {
@@ -465,7 +473,7 @@ body {
     padding: 10px 20px;
     color: #616161;
     font-size: 18px;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 .field-wrapper textarea {
@@ -773,13 +781,14 @@ body {
     }
 
     .answers button {
-        min-width: 100px;
+        min-width: 90px;
         width: auto;
-        padding: 10px 25px;
+        padding: 10px;
     }
 
     .answers {
         gap: 10px;
+        justify-content: center;
     }
 
     .phrase {
